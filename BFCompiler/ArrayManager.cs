@@ -14,5 +14,31 @@ namespace BFCompiler
 		{
 			CurrentElement = new Element();
 		}
+
+		public void TraverseLeft()
+		{
+			if (CurrentElement.PreviousElement == null)
+			{
+				CurrentElement.PreviousElement = new Element();
+				CurrentElement = CurrentElement.PreviousElement;
+			}
+			else
+			{
+				CurrentElement = CurrentElement.PreviousElement;
+			}
+		}
+
+		public void TraverseRight()
+		{
+			if (CurrentElement.NextElement == null)
+			{
+				CurrentElement.NextElement = new Element();
+				CurrentElement = CurrentElement.NextElement;
+			}
+			else
+			{
+				CurrentElement = CurrentElement.NextElement;
+			}
+		}
 	}
 }
