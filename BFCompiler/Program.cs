@@ -7,7 +7,7 @@ namespace BFCompiler
 	{
 		static void Main(string[] args)
 		{
-			string codeToCompile;
+			string codeToCompile = "";
 
 			if(args.Length > 0)
 			{
@@ -21,6 +21,22 @@ namespace BFCompiler
 
 			//Continue with compilling string here
 
+			ArrayManager arrayMng = new ArrayManager();
+
+			foreach(char c in codeToCompile)
+			{
+				switch (c)
+				{
+					case '<':
+						arrayMng.TraverseLeft();
+						break;
+					case '>':
+						arrayMng.TraverseRight();
+						break;
+					default:
+						break;
+				}
+			}
 
 		}
 
