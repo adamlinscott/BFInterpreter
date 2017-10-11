@@ -1,0 +1,6 @@
+c:\users\adaml\documents\visual studio 2017\Projects\BFCompiler\BFCompiler\bin\Debug\BFCompiler.exe.config
+c:\users\adaml\documents\visual studio 2017\Projects\BFCompiler\BFCompiler\bin\Debug\BFCompiler.exe
+c:\users\adaml\documents\visual studio 2017\Projects\BFCompiler\BFCompiler\bin\Debug\BFCompiler.pdb
+c:\users\adaml\documents\visual studio 2017\Projects\BFCompiler\BFCompiler\obj\Debug\BFCompiler.csprojResolveAssemblyReference.cache
+c:\users\adaml\documents\visual studio 2017\Projects\BFCompiler\BFCompiler\obj\Debug\BFCompiler.exe
+c:\users\adaml\documents\visual studio 2017\Projects\BFCompiler\BFCompiler\obj\Debug\BFCompiler.pdb
