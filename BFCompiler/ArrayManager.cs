@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace BFCompiler
 {
-	class Element
+	class ArrayManager
 	{
-		public byte value = 0;
-		public Element PreviousElement { get; set; }
-		public Element NextElement { get; set; }
+		public Element CurrentElement;
+
+		public ArrayManager()
+		{
+			CurrentElement = new Element();
+		}
 	}
 }
