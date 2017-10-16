@@ -20,6 +20,7 @@ namespace BFCompiler
 			if (CurrentElement.PreviousElement == null)
 			{
 				CurrentElement.PreviousElement = new Element();
+				CurrentElement.PreviousElement.NextElement = CurrentElement;
 				CurrentElement = CurrentElement.PreviousElement;
 			}
 			else
@@ -33,6 +34,7 @@ namespace BFCompiler
 			if (CurrentElement.NextElement == null)
 			{
 				CurrentElement.NextElement = new Element();
+				CurrentElement.NextElement.PreviousElement = CurrentElement;
 				CurrentElement = CurrentElement.NextElement;
 			}
 			else
