@@ -16,7 +16,7 @@ namespace BFCompiler
 			else
 			{
 				Console.WriteLine("File name expected as first argument.");
-				System.Environment.Exit(1);
+				System.Environment.Exit(2);
 			}
 
 			//Continue with compilling string here
@@ -85,7 +85,7 @@ namespace BFCompiler
 			{
 				Console.WriteLine("The file could not be read:");
 				Console.WriteLine(e.Message);
-				System.Environment.Exit(1);
+				System.Environment.Exit(4);
 				return "";
 			}
 		}
