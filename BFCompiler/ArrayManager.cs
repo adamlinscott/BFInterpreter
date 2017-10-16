@@ -40,5 +40,15 @@ namespace BFCompiler
 				CurrentElement = CurrentElement.NextElement;
 			}
 		}
+
+		public void IncrementValue()
+		{
+			CurrentElement.value++;
+		}
+
+		public void DecrementValue()
+		{
+			CurrentElement.value--;
+		}
 	}
 }

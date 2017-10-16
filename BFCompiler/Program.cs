@@ -33,6 +33,12 @@ namespace BFCompiler
 					case '>':
 						arrayMng.TraverseRight();
 						break;
+					case '-':
+						arrayMng.DecrementValue();
+						break;
+					case '+':
+						arrayMng.IncrementValue();
+						break;
 					default:
 						break;
 				}

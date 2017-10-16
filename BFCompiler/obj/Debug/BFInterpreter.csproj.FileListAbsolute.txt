@@ -1,0 +1,3 @@
+C:\Users\Adam\Documents\GitHub\BFInterpreter\BFCompiler\bin\Debug\BFCompiler.exe.config
+C:\Users\Adam\Documents\GitHub\BFInterpreter\BFCompiler\obj\Debug\BFCompiler.exe
+C:\Users\Adam\Documents\GitHub\BFInterpreter\BFCompiler\obj\Debug\BFCompiler.pdb
