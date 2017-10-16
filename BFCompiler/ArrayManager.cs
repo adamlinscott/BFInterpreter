@@ -55,5 +55,11 @@ namespace BFCompiler
 		{
 			Console.Write(Convert.ToChar(CurrentElement.value));
 		}
+
+		public void ReadValue()
+		{
+			ConsoleKeyInfo input = Console.ReadKey();
+			CurrentElement.value = Convert.ToByte(input.KeyChar);
+		}
 	}
 }

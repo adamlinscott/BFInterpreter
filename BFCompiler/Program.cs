@@ -42,6 +42,9 @@ namespace BFCompiler
 					case '.':
 						arrayMng.PrintValue();
 						break;
+					case ',':
+						arrayMng.ReadValue();
+						break;
 					default:
 						break;
 				}

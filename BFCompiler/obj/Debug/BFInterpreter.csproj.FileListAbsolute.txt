@@ -3,3 +3,4 @@ C:\Users\Adam\Documents\GitHub\BFInterpreter\BFCompiler\obj\Debug\BFCompiler.exe
 C:\Users\Adam\Documents\GitHub\BFInterpreter\BFCompiler\obj\Debug\BFCompiler.pdb
 C:\Users\Adam\Documents\GitHub\BFInterpreter\BFCompiler\bin\Debug\BFCompiler.exe
 C:\Users\Adam\Documents\GitHub\BFInterpreter\BFCompiler\bin\Debug\BFCompiler.pdb
+C:\Users\Adam\Documents\GitHub\BFInterpreter\BFCompiler\obj\Debug\BFInterpreter.csprojResolveAssemblyReference.cache
