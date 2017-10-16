@@ -39,6 +39,9 @@ namespace BFCompiler
 					case '+':
 						arrayMng.IncrementValue();
 						break;
+					case '.':
+						arrayMng.PrintValue();
+						break;
 					default:
 						break;
 				}

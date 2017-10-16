@@ -50,5 +50,10 @@ namespace BFCompiler
 		{
 			CurrentElement.value--;
 		}
+
+		public void PrintValue()
+		{
+			Console.Write(Convert.ToChar(CurrentElement.value));
+		}
 	}
 }
