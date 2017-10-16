@@ -23,9 +23,9 @@ namespace BFCompiler
 
 			ArrayManager arrayMng = new ArrayManager();
 
-			foreach(char c in codeToCompile)
+			for(int i = 0; i < codeToCompile.Length; i++)
 			{
-				switch (c)
+				switch (codeToCompile[i])
 				{
 					case '<':
 						arrayMng.TraverseLeft();
@@ -44,6 +44,24 @@ namespace BFCompiler
 						break;
 					case ',':
 						arrayMng.ReadValue();
+						break;
+					case '[':
+						if (arrayMng.CurrentElement.value == 0)
+						{
+							while(codeToCompile[i] != ']' && i < codeToCompile.Length)
+							{
+								i++;
+							}
+						}
+						break;
+					case ']':
+						if (arrayMng.CurrentElement.value != 0)
+						{
+							while (codeToCompile[i] != '[' && i >= 0)
+							{
+								i--;
+							}
+						}
 						break;
 					default:
 						break;
