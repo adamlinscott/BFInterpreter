@@ -2,8 +2,6 @@ Code takes a number of characters and input and prints them in reversin on the n
 
 .+[.+]
 
->++++++++++.< new line
->++++++++++.< new line
->++++++++++.< new line
+>++++++++++...< new lines
 
->>,>,>,>,>,>,>,>, >++++++++++.< .<.<.<.<.<.<.<.<.<.<.<.
+>>,>,>,>,>,>,>,>, >++++++++++.< .<.<.<.<.<.<.<.<.<
