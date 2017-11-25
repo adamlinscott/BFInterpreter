@@ -1,1 +1,7 @@
->++[<+++>-].
+Code takes a number of characters and input and prints them in reversin on the next line
+
+.+[.+]
+
+>++++++++++...< new lines
+
+>>,>,>,>,>,>,>,>, >++++++++++.< .<.<.<.<.<.<.<.<.<

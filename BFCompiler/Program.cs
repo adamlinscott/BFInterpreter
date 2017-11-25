@@ -7,7 +7,7 @@ namespace BFCompiler
 	{
 		static void Main(string[] args)
 		{
-			string codeToCompile;
+			string codeToCompile = "";
 
 			if(args.Length > 0)
 			{
@@ -16,11 +16,57 @@ namespace BFCompiler
 			else
 			{
 				Console.WriteLine("File name expected as first argument.");
-				System.Environment.Exit(1);
+				System.Environment.Exit(2);
 			}
 
 			//Continue with compilling string here
 
+			ArrayManager arrayMng = new ArrayManager();
+
+			for(int i = 0; i < codeToCompile.Length; i++)
+			{
+				switch (codeToCompile[i])
+				{
+					case '<':
+						arrayMng.TraverseLeft();
+						break;
+					case '>':
+						arrayMng.TraverseRight();
+						break;
+					case '-':
+						arrayMng.DecrementValue();
+						break;
+					case '+':
+						arrayMng.IncrementValue();
+						break;
+					case '.':
+						arrayMng.PrintValue();
+						break;
+					case ',':
+						arrayMng.ReadValue();
+						break;
+					case '[':
+						if (arrayMng.CurrentElement.value == 0)
+						{
+							while(codeToCompile[i] != ']' && i < codeToCompile.Length)
+							{
+								i++;
+							}
+						}
+						break;
+					case ']':
+						if (arrayMng.CurrentElement.value != 0)
+						{
+							while (codeToCompile[i] != '[' && i >= 0)
+							{
+								i--;
+							}
+						}
+						break;
+					default:
+						break;
+				}
+			}
 
 		}
 
@@ -39,7 +85,7 @@ namespace BFCompiler
 			{
 				Console.WriteLine("The file could not be read:");
 				Console.WriteLine(e.Message);
-				System.Environment.Exit(1);
+				System.Environment.Exit(4);
 				return "";
 			}
 		}
